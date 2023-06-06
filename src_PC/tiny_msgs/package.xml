@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>tiny_msgs</name>
+  <version>0.0.0</version>
+  <description>This package contains the message definitions for bandwidth-optimized messages for cloud-based navigation.</description>
+
+  <!-- author and maintainer information -->
+  <maintainer email="james.s.jackson@byu.edu">James Jackson</maintainer>
+  <author email="james.s.jackson@byu.edu">James Jackson</author> -->
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <export>
+
+
+  </export>
+</package>
