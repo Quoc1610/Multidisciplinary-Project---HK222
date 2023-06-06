@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+        <arg name="BASE_PWM" default="50" />
+        <arg name="MULTIPLIER_STANDARD" default="0.1" />
+        <arg name="simple_mode" default="true" />
+
+
+        <node   name="motor_driver_start"
+                pkg="test"
+                type="move_with_cmd_vel.py"
+                respawn="false"
+                output="screen"
+                args="$(arg BASE_PWM) $(arg MULTIPLIER_STANDARD) $(arg simple_mode)">
+        </node>
+        
+        <node   name="pca_node"
+                pkg="pwm_pca9685"
+                type="pca9685_node"
+                respawn="false"
+                output="screen">
+        </node>
+</launch>
