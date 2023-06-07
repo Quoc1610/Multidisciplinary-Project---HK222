@@ -4,9 +4,10 @@
     <include file="$(find tesla_tools)/launch/start_amcl_localization.launch" />
     
     <!-- Start EKF Localization -->
-    <include file="$(find tesla_tools)/launch/start_ekf_localization.launch" />
+    <!-- <include file="$(find tesla_tools)/launch/start_ekf_localization.launch" /> -->
     
     <!-- Start Move Base -->
     <include file="$(find tesla_tools)/launch/move_base_map.launch" />
 
+    <node pkg="tesla_tools" type="init_particles_caller.py" name="service_client" output="screen"/>
 </launch>
